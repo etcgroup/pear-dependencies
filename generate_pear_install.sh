@@ -6,7 +6,7 @@ export PATH=/home/jenkins/pear/bin:$PATH
 # Install pear
 echo "Installing a fresh PEAR"
 # Only download a fresh go-pear if needed
-wget -nc http://pear.php.net/go-pear.phar -O ${WORKSPACE}/go-pear.phar
+wget -nc http://pear.php.net/go-pear.phar -O ${WORKSPACE}/go-pear.phar | true
 php ${WORKSPACE}/go-pear.phar
 
 # Use the new php.ini
