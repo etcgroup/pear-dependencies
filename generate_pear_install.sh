@@ -10,7 +10,7 @@ wget -nc http://pear.php.net/go-pear.phar -O ${WORKSPACE}/go-pear.phar | true
 php ${WORKSPACE}/go-pear.phar
 
 # Use the new php.ini
-mv /home/jenkins/pear/php.ini-gopear /home/jenkins/pear/php.ini
+mv /home/jenkins/pear/php.ini-gopear /home/jenkins/pear/php.ini | true
 
 # IMPORTANT
 # This needs to be in the environment in order to actually use the local pear
