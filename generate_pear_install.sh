@@ -30,4 +30,5 @@ pear config-set auto_discover 1
 pear install pear.phpqatools.org/phpqatools pear.netpirates.net/phpDox-0.4.0
 
 # Create an archive of the pear installation
+mkdir -p ${WORKSPACE}/archive
 tar -czf ${WORKSPACE}/archive/pear.tar.gz /home/jenkins/pear
